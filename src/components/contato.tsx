@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Contato() {
   return (
     <section>
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto">
         <p className="text-gray-700 mb-8">
           Entre em contato com a <strong>Zanardo Marcenaria</strong> para projetos sob medida e móveis de alto padrão no Rio de Janeiro.
         </p>

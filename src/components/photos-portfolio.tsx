@@ -43,7 +43,7 @@ export default function PortfolioPhotosPage() {
       <ColumnsPhotoAlbum
         photos={portfolioPhotos}
         render={{ image: renderNextImage }}
-        spacing={10}
+        spacing={5}
         onClick={({ index: current }) => setIndex(current)}
       />
 

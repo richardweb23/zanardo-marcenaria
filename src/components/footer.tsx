@@ -5,8 +5,8 @@ import { config } from "@/app/data/config";
 
 export default function Footer() {
   return (
-    <footer className="bg-black mt-40 text-white py-8 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col items-center justify-between">
+    <footer className="bg-black px-6 py-10 text-white">
+      <div className="max-w-6xl mx-auto flex flex-col items-center">
         <div className="mb-6 flex items-center">
           <Image
             src={`${config.imgPath}/logo-branca.svg`}

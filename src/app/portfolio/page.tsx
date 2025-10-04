@@ -28,6 +28,9 @@ export default function PortfolioPage() {
             Explore nossos projetos exclusivos de <strong>móveis planejados e marcenaria de alto padrão</strong> na Zona Sul do Rio de Janeiro. Cada projeto une <strong>design sofisticado, funcionalidade e acabamento premium</strong>, mostrando a excelência do nosso trabalho.
           </p>
 
+
+          <PortfolioPhotosPage />
+
           <h2 className={`${styles.h2}`}>Por que escolher a Zanardo Marcenaria?</h2>
           <p className="text-md text-gray-700 leading-relaxed mb-6">
             Trabalhamos em <strong>parceria com arquitetos premiados</strong>, garantindo soluções personalizadas que valorizam cada ambiente. Nossa equipe alia tradição artesanal à tecnologia moderna, oferecendo projetos <strong>duráveis, elegantes e únicos</strong>.
@@ -36,7 +39,6 @@ export default function PortfolioPage() {
             Desde 2015, transformamos espaços em ambientes sofisticados e funcionais, sempre prezando por <strong>qualidade, prazo e excelência em cada detalhe</strong>.
           </p>
         </div>
-        <PortfolioPhotosPage />
       </main>
 
     </>
