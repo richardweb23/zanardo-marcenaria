@@ -1,6 +1,7 @@
 // components/Footer.tsx
 import Link from "next/link";
 import Image from "next/image";
+import { config } from "@/app/data/config";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col items-center justify-between">
         <div className="mb-6 flex items-center">
           <Image
-            src="/logo-branca.svg"
+            src={`${config.imgPath}/logo-branca.svg`}
             alt="Zanardo Marcenaria"
             width={120}
             height={50}

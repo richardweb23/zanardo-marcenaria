@@ -3,9 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { config } from "@/app/data/config";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const { imgPath } = config;
 
   return (
     <header className="bg-white shadow-md fixed w-full top-0 left-0 z-50">
@@ -13,7 +15,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo-preta.svg"
+            src={`${imgPath}/logo-preta.svg`}
             alt="Logo Zanardo Marcenaria"
             width={150}
             height={60}

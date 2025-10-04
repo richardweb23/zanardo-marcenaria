@@ -1,3 +1,4 @@
+import { config } from "@/app/data/config";
 
 // === Dados das fotos ===
 const rawPortfolioPhotos = [
@@ -15,7 +16,7 @@ function generatePhotos(files: { src: string; alt?: string }[]) {
     if (!match) throw new Error(`Arquivo inválido: ${src}`);
     const [, , w, h] = match;
     return {
-      src: `/portfolio-home/${src}`,
+      src: `${config.imgPath}/portfolio-home/${src}`,
       width: parseInt(w, 10),
       height: parseInt(h, 10),
       alt,
