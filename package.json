@@ -5,9 +5,9 @@
   "homepage": "https://richardweb23.github.io/zanardo-marcenaria",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "next build",
     "predeploy": "npm run build",
-    "deploy": "type nul > out/.nojekyll && gh-pages -d out"
+    "deploy": "echo > out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "next": "15.5.4",
