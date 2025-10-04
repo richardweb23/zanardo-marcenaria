@@ -6,7 +6,6 @@ export default function Contato() {
   return (
     <section>
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-relaway mb-6 mt-12">Contato</h2>
         <p className="text-gray-700 mb-8">
           Entre em contato com a <strong>Zanardo Marcenaria</strong> para projetos sob medida e móveis de alto padrão no Rio de Janeiro.
         </p>

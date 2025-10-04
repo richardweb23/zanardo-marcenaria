@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { styles } from "../data/styles";
 
 export default function SobrePage() {
   return (
@@ -19,9 +20,9 @@ export default function SobrePage() {
         <link rel="canonical" href="http://www.zanardomarcenaria.com.br/sobre" />
       </Head>
 
-      <main className="min-h-screen py-20 px-12 bg-gray-50">
+      <main className="min-h-screen px-6 py-10 mb:py-20 mb:px-20 bg-gray-50">
         <div className="max-w-4xl mx-auto mb-20">
-          <h1 className="text-4xl font-bold font-montserrat mb-6">Sobre a Zanardo Marcenaria</h1>
+          <h1 className={`${styles.h1}`}>Sobre a Zanardo Marcenaria</h1>
 
           <p className="text-md text-gray-700 leading-relaxed mb-6">
             Fundada no Rio de Janeiro, a <strong>Zanardo Marcenaria</strong> é referência em <strong>marcenaria de alto padrão</strong>, especializada em <strong>móveis planejados sob medida</strong>. Atendemos clientes exigentes que buscam <strong>sofisticação, funcionalidade e acabamento premium</strong> em cada projeto.
@@ -39,7 +40,7 @@ export default function SobrePage() {
             Explore nossos projetos e descubra como a <strong>Zanardo Marcenaria</strong> pode criar <strong>soluções exclusivas</strong> que refletem <strong>estilo, conforto e precisão artesanal</strong>.
           </p>
 
-          <h2 className="text-4xl font-bold font-montserrat mb-6">Nossa Missão</h2>
+          <h2 className={`${styles.h2}`}>Nossa Missão</h2>
           <p className="text-md text-gray-700 leading-relaxed">
             <strong>Transformar espaços em ambientes únicos, sofisticados e funcionais</strong>.
           </p>

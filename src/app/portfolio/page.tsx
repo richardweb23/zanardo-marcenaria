@@ -1,5 +1,6 @@
 import PortfolioPhotosPage from "@/components/photos-portfolio";
 import Head from "next/head";
+import { styles } from "../data/styles";
 
 export default function PortfolioPage() {
   return (
@@ -20,14 +21,14 @@ export default function PortfolioPage() {
         <link rel="canonical" href="http://www.zanardomarcenaria.com.br/portfolio" />
       </Head>
 
-      <main className="min-h-screen py-20 px-12 bg-gray-50">
+      <main className="min-h-screen px-6 py-10 mb:py-20 mb:px-20 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl font-bold font-montserrat mb-6">Portfólio Zanardo Marcenaria</h1>
+          <h1 className={`${styles.h1}`}>Portfólio Zanardo Marcenaria</h1>
           <p className="text-md text-gray-700 leading-relaxed mb-12">
             Explore nossos projetos exclusivos de <strong>móveis planejados e marcenaria de alto padrão</strong> na Zona Sul do Rio de Janeiro. Cada projeto une <strong>design sofisticado, funcionalidade e acabamento premium</strong>, mostrando a excelência do nosso trabalho.
           </p>
 
-          <h2 className="text-3xl font-bold font-montserrat mb-6">Por que escolher a Zanardo Marcenaria?</h2>
+          <h2 className={`${styles.h2}`}>Por que escolher a Zanardo Marcenaria?</h2>
           <p className="text-md text-gray-700 leading-relaxed mb-6">
             Trabalhamos em <strong>parceria com arquitetos premiados</strong>, garantindo soluções personalizadas que valorizam cada ambiente. Nossa equipe alia tradição artesanal à tecnologia moderna, oferecendo projetos <strong>duráveis, elegantes e únicos</strong>.
           </p>
