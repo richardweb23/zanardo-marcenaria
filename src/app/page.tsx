@@ -2,6 +2,7 @@
 import Contato from "@/components/contato";
 import PortfolioHomePage from "@/components/photos-home";
 import Link from "next/link";
+import { config } from "./data/config";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
           id="inicio"
           className="mx-auto grid md:grid-cols-1"
         >
-          <div className="w-full flex pt-0 bg-cover bg-center bg-no-repeat bg-blend-multiply animate-fadeInUp" style={{ backgroundImage: "url('/bg-1.jpg')" }}>
+          <div className="w-full flex pt-0 bg-cover bg-center bg-no-repeat bg-blend-multiply animate-fadeInUp" style={{ backgroundImage: `url(${config.imgPath}/bg-1.jpg)` }}>
             <div className="w-full lg:w-[50%] pt-12 pb-12 px-12 bg-black/60 lg:bg-black/50 animate-fadeIn">
               <h1 className="flex text-4xl md:text-5xl text-white font-bold leading-tight font-relaway">
                 Zanardo Marcenaria
