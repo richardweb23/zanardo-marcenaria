@@ -37,7 +37,7 @@ function renderNextImage(
 export default function PortfolioHomePage() {
   return (
     <ColumnsPhotoAlbum
-      photos={portfolioPhotos}
+      photos={portfolioPhotos.slice(0, 8)}
       render={{ image: renderNextImage }}
       spacing={10}
     />

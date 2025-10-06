@@ -35,7 +35,7 @@ export default function PortfolioPage() {
 
         <PortfolioPhotosPage />
 
-        <h2 className={`${styles.h2}`}>Por que escolher a Zanardo Marcenaria?</h2>
+        <h2 className={`${styles.h2} mt-12`}>Por que escolher a Zanardo Marcenaria?</h2>
         <p className="text-md text-gray-700 leading-relaxed mb-6">
           Trabalhamos em <strong>parceria com arquitetos premiados</strong>, garantindo soluções personalizadas que valorizam cada ambiente. Nossa equipe alia tradição artesanal à tecnologia moderna, oferecendo projetos <strong>duráveis, elegantes e únicos</strong>.
         </p>
