@@ -5,7 +5,7 @@ module.exports = {
   sitemapSize: 5000,
 
   additionalSitemaps: [
-    'https://zanardomarcenaria.com.br/sitemap-paginas.xml',
+    'https://zanardomarcenaria.com.br/sitemap-0.xml',
   ],
 
   exclude: ['/404', '/api/*'],
