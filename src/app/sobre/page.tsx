@@ -15,9 +15,9 @@ export default function SobrePage() {
           property="og:description"
           content="Especialistas em móveis planejados sob medida e marcenaria de alto padrão no Rio de Janeiro. Projetos residenciais e comerciais com design exclusivo."
         />
-        <meta property="og:url" content="http://www.zanardomarcenaria.com.br/sobre" />
+        <meta property="og:url" content="https://www.zanardomarcenaria.com.br/sobre" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="http://www.zanardomarcenaria.com.br/sobre" />
+        <link rel="canonical" href="https://www.zanardomarcenaria.com.br/sobre" />
       </Head>
 
       <main className="min-h-screen px-6 py-10 mb:py-20 mb:px-20 bg-gray-50">

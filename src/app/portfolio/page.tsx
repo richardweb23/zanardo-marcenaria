@@ -16,9 +16,8 @@ export default function PortfolioPage() {
           property="og:description"
           content="Conheça nossos projetos de marcenaria de alto padrão e móveis planejados sob medida, realizados no Rio de Janeiro. Design, funcionalidade e acabamento premium."
         />
-        <meta property="og:url" content="http://www.zanardomarcenaria.com.br/portfolio" />
+        <meta property="og:url" content="https://www.zanardomarcenaria.com.br/portfolio" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="http://www.zanardomarcenaria.com.br/portfolio" />
       </Head>
 
       <main className="min-h-screen px-6 py-10 mb:py-20 mb:px-20 bg-gray-50">

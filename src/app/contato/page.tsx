@@ -13,7 +13,7 @@ export default function ContatoPage() {
           name="description"
           content="Entre em contato com a Zanardo Marcenaria, especializada em móveis planejados sob medida e marcenaria de alto padrão no Rio de Janeiro. WhatsApp e Instagram disponíveis."
         />
-        <link rel="canonical" href="http://www.zanardomarcenaria.com.br/contato" />
+        <link rel="canonical" href="https://www.zanardomarcenaria.com.br/contato" />
       </Head>
 
       <main className="min-h-screen px-6 py-10 mb:py-20 mb:px-20 bg-gray-50">

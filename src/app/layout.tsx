@@ -54,6 +54,29 @@ export default function RootLayout({
             content="marcenaria Rio de Janeiro, móveis planejados RJ, marcenaria sob medida, móveis de alto padrão, acabamento premium"
           />
 
+          <script
+            type="application/ld+json"
+            // O conteúdo precisa ser uma string
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "Zanardo Marcenaria",
+                "image": "https://www.zanardomarcenaria.com.br/og-image.png",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Rua Campos, 24",
+                  "addressLocality": "Rio de Janeiro",
+                  "addressRegion": "RJ",
+                  "postalCode": "21843-163",
+                  "addressCountry": "BR"
+                },
+                "telephone": "+55 21 97000-2758",
+                "url": "https://www.zanardomarcenaria.com.br"
+              })
+            }}
+          />
+
           <meta name="viewport" content="width=device-width, initial-scale=1" />
 
           {/* Open Graph / Facebook */}
@@ -64,9 +87,9 @@ export default function RootLayout({
             property="og:description"
             content="Especialistas em móveis planejados sob medida, sofisticação e acabamento premium."
           />
-          <meta property="og:url" content="http://www.zanardomarcenaria.com.br" />
+          <meta property="og:url" content="https://www.zanardomarcenaria.com.br" />
           <meta property="og:site_name" content="Marcenaria RJ" />
-          <meta property="og:image" content="http://www.zanardomarcenaria.com.br/og-image.jpg" />
+          <meta property="og:image" content="https://www.zanardomarcenaria.com.br/og-image.png" />
 
           {/* Twitter Card */}
           <meta name="twitter:card" content="summary_large_image" />
@@ -75,10 +98,20 @@ export default function RootLayout({
             name="twitter:description"
             content="Móveis planejados sob medida, sofisticação e acabamento premium."
           />
-          <meta name="twitter:image" content="http://www.zanardomarcenaria.com.br/og-image.jpg" />
+          <meta property="twitter:url" content="https://www.zanardomarcenaria.com.br/"></meta>
+          <meta name="twitter:image" content="https://www.zanardomarcenaria.com.br/og-image.png" />
+
+
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="manifest" href="/site.webmanifest" />
+
+          <meta name="robots" content="index, follow" />
+          <meta name="googlebot" content="index, follow" />
 
           {/* Canonical */}
-          <link rel="canonical" href="http://www.zanardomarcenaria.com.br/" />
+          <link rel="canonical" href="https://www.zanardomarcenaria.com.br/" />
         </Head>
         <ScrollToTop /> {/* aqui fica o scroll */}
 
