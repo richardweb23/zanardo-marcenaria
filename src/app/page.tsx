@@ -24,7 +24,7 @@ export default function Home() {
                 </p>
 
                 <p className="w-full mb-4 md:mb-6">
-                  Atuamos lado a lado com <strong>arquitetos e designers de interiores</strong>, idealizando e executando <strong>projetos exclusivos</strong> que valorizam cada detalhe. Foi assim que participamos do <strong>premiado Raízes do Norte</strong>, do arquiteto <strong>Cadé Marino (@studio.marino_)</strong>, vencedor do <strong>28º Prêmio Deca na categoria Cozinha para Receber (CASACOR)</strong>, onde tivemos a honra de executar <strong>toda a marcenaria do espaço</strong>.
+                  Atuamos lado a lado com <strong>arquitetos e designers de interiores</strong>, idealizando e executando <strong>projetos exclusivos</strong> que valorizam cada detalhe. Foi assim que participamos do <strong>premiado Raízes do Norte</strong>, vencedor do <strong>28º Prêmio Deca na categoria Cozinha para Receber (CASACOR)</strong>, onde tivemos a honra de executar <strong>toda a marcenaria do espaço</strong>.
                 </p>
 
                 <p className="w-full mb-4 md:mb-6">

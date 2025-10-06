@@ -6,11 +6,14 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "predeploy": "npm run build",
     "deploy": "echo > out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
     "next": "15.5.4",
+    "next-sitemap": "^4.2.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-icons": "^5.5.0",
