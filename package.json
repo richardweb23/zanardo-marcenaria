@@ -8,7 +8,7 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "predeploy": "npm run build",
-    "deploy": "echo > out/.nojekyll && gh-pages -d out --dotfiles"
+    "deploy": "echo 'zanardomarcenaria.com.br' > out/CNAME && echo > out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.14",
