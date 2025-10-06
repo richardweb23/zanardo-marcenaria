@@ -2,7 +2,7 @@
   "name": "zanardo-marcenaria",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://richardweb23.github.io/zanardo-marcenaria",
+  "homepage": "https://www.zanardomarcenaria.com.br",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
