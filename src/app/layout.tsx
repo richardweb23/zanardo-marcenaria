@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import ScrollToTop from "@/components/scroll";
 import Footer from "@/components/footer";
+import Script from "next/script";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -77,6 +78,23 @@ export default function RootLayout({
             }),
           }}
         />
+
+        {/*<!-- Google tag (gtag.js) -->*/}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-BZ3S2YHYYB"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+        >
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-BZ3S2YHYYB');
+        `}
+        </Script>
 
         <ScrollToTop />
         <Header />
