@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Publicação automática no GitHub Pages
+
+O workflow em `.github/workflows/deploy.yml` gera e publica o site sempre que um push chega à branch `main`. Também é possível executá-lo manualmente em **Actions → Publicar site → Run workflow**. O build usa `npm ci` e `npm run build`; somente um build bem-sucedido é publicado.
+
+Para ativar, no GitHub abra **Settings → Pages → Build and deployment → Source** e selecione **GitHub Actions**. Mantenha o domínio personalizado configurado no Pages e no DNS. O workflow inclui o mesmo domínio usado pelo deploy manual (`zanardomarcenaria.com.br`). Acompanhe o resultado na aba **Actions**.
+
+O comando `npm run deploy` existente envia arquivos à branch `gh-pages`. Após mudar a origem do Pages para GitHub Actions, essa branch deixa de ser a origem publicada; para publicar manualmente, execute o workflow pela aba Actions.
+
