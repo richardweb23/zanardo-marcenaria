@@ -1,53 +1,9 @@
-import { styles } from "../data/styles";
-
-export const metadata = {
-  title: "Sobre a Zanardo Marcenaria | Móveis Planejados RJ",
-  description:
-    "A Zanardo Marcenaria atua desde 2015 oferecendo móveis planejados sob medida e soluções de marcenaria de alto padrão no Rio de Janeiro. Projetos exclusivos e acabamento premium.",
-  openGraph: {
-    title: "Sobre a Zanardo Marcenaria | Móveis Planejados RJ",
-    description:
-      "Especialistas em móveis planejados sob medida e marcenaria de alto padrão no Rio de Janeiro. Projetos residenciais e comerciais com design exclusivo.",
-    url: "https://www.zanardomarcenaria.com.br/sobre",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Sobre a Zanardo Marcenaria | Móveis Planejados RJ",
-    description:
-      "Especialistas em móveis planejados sob medida e marcenaria de alto padrão no Rio de Janeiro. Projetos residenciais e comerciais com design exclusivo.",
-  },
-  alternates: {
-    canonical: "https://www.zanardomarcenaria.com.br/sobre",
-  },
-};
-
-export default function SobrePage() {
-  return (
-    <main className="min-h-screen px-6 py-10 mb:py-20 mb:px-20 bg-gray-50">
-      <div className="max-w-4xl mx-auto mb-20">
-        <h1 className={`${styles.h1}`}>Sobre a Zanardo Marcenaria</h1>
-
-        <p className="text-md text-gray-700 leading-relaxed mb-6">
-          Fundada no Rio de Janeiro, a <strong>Zanardo Marcenaria</strong> é referência em <strong>marcenaria de alto padrão</strong>, especializada em <strong>móveis planejados sob medida</strong>. Atendemos clientes exigentes que buscam <strong>sofisticação, funcionalidade e acabamento premium</strong> em cada projeto.
-        </p>
-
-        <p className="text-md text-gray-700 leading-relaxed mb-6">
-          Trabalhamos em <strong>parceria com arquitetos premiados</strong>, garantindo <strong>soluções exclusivas e personalizadas</strong> que valorizam tanto ambientes residenciais quanto corporativos. Nossa equipe alia a <strong>tradição artesanal</strong> à <strong>tecnologia moderna</strong>, oferecendo móveis duráveis, elegantes e com atenção a cada detalhe.
-        </p>
-
-        <p className="text-md text-gray-700 leading-relaxed mb-6">
-          Desde 2015, nossa missão é <strong>transformar espaços em ambientes únicos, sofisticados e funcionais</strong>, sempre prezando pela <strong>qualidade dos materiais</strong>, <strong>cumprimento de prazos</strong> e <strong>excelência em todos os processos</strong>.
-        </p>
-
-        <p className="text-md text-gray-700 leading-relaxed mb-12">
-          Explore nossos projetos e descubra como a <strong>Zanardo Marcenaria</strong> pode criar <strong>soluções exclusivas</strong> que refletem <strong>estilo, conforto e precisão artesanal</strong>.
-        </p>
-
-        <h2 className={`${styles.h2}`}>Nossa Missão</h2>
-        <p className="text-md text-gray-700 leading-relaxed">
-          <strong>Transformar espaços em ambientes únicos, sofisticados e funcionais</strong>.
-        </p>
-      </div>
-    </main>
-  );
-}
+import Link from "next/link";
+import Image from "next/image";
+export const metadata = { title: "Nossa história | Zanardo Marcenaria", description: "Conheça a história da Zanardo Marcenaria, construída com trabalho, coragem e sonhos no Rio de Janeiro." };
+export default function SobrePage(){return <main><section className="page-hero"><div className="container"><p className="eyebrow">Nossa história</p><h1>Uma história construída com trabalho, <em>coragem e sonhos.</em></h1><p className="page-lead">“Começamos do zero, construímos uma empresa e hoje temos o privilégio de construir os sonhos de outras pessoas.”</p></div></section>
+<section className="section"><div className="container story-layout"><aside><p className="eyebrow">O começo</p><span className="aside-number">01</span></aside><div className="prose"><h2>Onde tudo <em>começou.</em></h2><p>Minha história com a marcenaria começou aos 21 anos, logo depois de sair do quartel. Entrei na profissão como ajudante, sem imaginar que aquele trabalho se tornaria o grande propósito da minha vida.</p><p>Tive a sorte de encontrar no meu caminho uma pessoa muito especial: Alexandre de Castro Rodrigues, que foi meu professor, acreditou em mim e me deu a oportunidade de aprender. Foi com ele que aprendi praticamente tudo sobre marcenaria e dei meus primeiros passos nessa profissão. Mais do que me ensinar um ofício, ele foi fundamental para despertar em mim a paixão por essa arte. Sou muito grato pela oportunidade e por todos os ensinamentos.</p><p>Aos 23 anos, já era profissional e tinha certeza de que queria seguir esse caminho. Aos 25, tomei uma das decisões mais importantes da minha vida: abrir minha própria empresa.</p></div></div></section>
+<section className="story-feature"><div className="story-feature-image"><Image src="/portfolio-home/14.1920x2880.jpg" alt="Ambiente com mobiliário executado pela Zanardo Marcenaria" fill sizes="(max-width: 768px) 100vw, 50vw"/></div><div className="story-feature-copy"><p className="eyebrow light">Coragem para começar</p><blockquote>“Tinha apenas muita vontade de vencer, disposição para trabalhar e um sonho muito maior do que as condições que possuía naquele momento.”</blockquote></div></section>
+<section className="section"><div className="container story-layout"><aside><p className="eyebrow">Crescimento</p><span className="aside-number">02</span></aside><div className="prose"><h2>Construir, aprender <em>e evoluir.</em></h2><p>Comecei literalmente do zero. Não tinha estrutura, máquinas, funcionários ou grandes recursos.</p><p>Com muito esforço, fomos crescendo, investindo e elevando nosso padrão de qualidade. Aquela pequena empresa foi se transformando em uma estrutura sólida, com maquinários de primeira linha, uma equipe de quase 30 colaboradores e uma identidade construída com dedicação e compromisso.</p><p>Mas nunca quisemos ser apenas mais uma marcenaria. Sempre sonhei em construir uma empresa de alto padrão, capaz de entregar muito mais do que móveis.</p></div></div></section>
+<section className="section story-purpose"><div className="container story-layout"><aside><p className="eyebrow">Nosso propósito</p><span className="aside-number">03</span></aside><div className="prose"><h2>Mais do que móveis, <em>um lar.</em></h2><p>Acreditamos que uma casa não é apenas um imóvel. É o lugar onde se constroem histórias, se vivem momentos especiais e se realizam sonhos. É aquele lugar que nos abraça quando chegamos, que transmite aconchego, acolhe nossa essência e carrega um pouco de tudo aquilo que somos.</p><p>Cada ambiente guarda desejos, escolhas e detalhes que foram cuidadosamente idealizados por quem sonhou com aquele lar. E é justamente isso que torna cada casa única.</p><p>Por isso, nosso trabalho vai muito além de fabricar e instalar móveis. Temos o privilégio e a responsabilidade de transformar projetos em ambientes únicos, dando vida a cada detalhe e tornando sonhos em realidade.</p><p>Porque, no final, não se trata apenas de criar móveis, mas de ajudar a construir um lar onde as pessoas tenham prazer em estar, viver e criar suas melhores histórias.</p></div></div></section>
+<section className="section"><div className="container story-layout"><aside><p className="eyebrow">Seguimos juntos</p><span className="aside-number">04</span></aside><div className="prose"><h2>Uma história que continua <em>em construção.</em></h2><p>Hoje, olhar para trás e ver tudo o que construímos é motivo de muito orgulho. Uma empresa que nasceu do absoluto zero, conquistou seu espaço no mercado e hoje recebe reconhecimento por uma trajetória marcada por trabalho, superação e evolução.</p><p>Nada disso seria possível sozinho. Existe uma equipe por trás de cada conquista, pessoas que fazem parte dessa história e ajudam a transformar nosso propósito em realidade todos os dias.</p><p>A Zanardo Marcenaria é o resultado de um sonho que começou pequeno, mas que nunca teve limites para crescer.</p><p>E se existe algo que essa trajetória me ensinou é que grandes conquistas são construídas todos os dias, com coragem para começar, humildade para aprender e determinação para nunca parar de evoluir.</p><p>Nossa história ainda está sendo escrita, e nosso compromisso continua o mesmo: transformar projetos em ambientes únicos e sonhos em realidade.</p><div className="actions"><Link className="button button-dark" href="/portfolio">Conheça nossos projetos ↗</Link><Link className="text-link" href="/contato">Fale com a gente ↗</Link></div></div></div></section></main>}

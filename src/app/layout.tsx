@@ -99,7 +99,7 @@ export default function RootLayout({
         <ScrollToTop />
         <Header />
 
-        <main className="pt-[50px]">{children}</main>
+        {children}
         <Footer />
       </body>
     </html>

@@ -39,7 +39,7 @@ export default function PortfolioPhotosPage() {
   const [index, setIndex] = useState(-1);
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div>
       <ColumnsPhotoAlbum
         photos={portfolioPhotos}
         render={{ image: renderNextImage }}
@@ -53,6 +53,6 @@ export default function PortfolioPhotosPage() {
         open={index >= 0}
         close={() => setIndex(-1)}
       />
-    </main>
+    </div>
   );
 }

@@ -1,34 +1,3 @@
-// components/Footer.tsx
 import Link from "next/link";
 import Image from "next/image";
-import { config } from "@/app/data/config";
-
-export default function Footer() {
-  return (
-    <footer className="bg-black px-6 py-10 text-white">
-      <div className="max-w-6xl mx-auto flex flex-col items-center">
-        <div className="mb-6 flex items-center">
-          <Image
-            src={`${config.imgPath}/logo-branca.svg`}
-            alt="Zanardo Marcenaria"
-            width={120}
-            height={50}
-            className="object-contain"
-          />
-        </div>
-
-        {/* Créditos */}
-        <div className="text-center text-sm text-gray-400">
-          Desenvolvido por{" "}
-          <Link
-            href="https://www.instagram.com/richardweb23/"
-            target="_blank"
-            className="text-gray-200 hover:text-white underline"
-          >
-            @richardweb23
-          </Link>
-        </div>
-      </div>
-    </footer>
-  );
-}
+export default function Footer(){return <footer className="site-footer"><div className="container footer-grid"><div><Image src="/logo-branca.svg" alt="Zanardo Marcenaria" width={150} height={60}/><p>Marcenaria sob medida para espaços que contam histórias.</p></div><div><span className="footer-label">Explore</span><Link href="/sobre">Nossa história</Link><Link href="/portfolio">Portfólio</Link><Link href="/contato">Contato</Link></div><div><span className="footer-label">Converse com a gente</span><a href="https://wa.me/5521970002758" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><a href="tel:+5521970002758">(21) 97000-2758</a><a href="https://www.instagram.com/zanardomarcenaria/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><p>Rio de Janeiro, RJ</p></div></div><div className="container footer-bottom"><span>© Zanardo Marcenaria</span><a href="https://www.instagram.com/richardweb23/" target="_blank" rel="noopener noreferrer">Desenvolvido por @richardweb23</a></div></footer>}

@@ -1,86 +1,10 @@
-// pages/index.tsx
-import Contato from "@/components/contato";
-import PortfolioHomePage from "@/components/photos-home";
 import Link from "next/link";
-import { config } from "./data/config";
-
-export default function Home() {
-  return (
-    <>
-      <main className="min-h-screen bg-gray-50">
-        {/* Hero Section */}
-        <section
-          id="inicio"
-          className="mx-auto grid md:grid-cols-1"
-        >
-          <div className="w-full flex pt-0 bg-cover bg-center bg-no-repeat bg-blend-multiply animate-fadeInUp" style={{ backgroundImage: `url(${config.imgPath}/bg-1.jpg)` }}>
-            <div className="w-full bg-black/60 pt-8 pb-4 px-6 md:pt-12 md:pb-12 md:px-12 lg:w-[50%] lg:bg-black/50 animate-fadeIn">
-              <h1 className="flex text-2xl md:text-5xl text-white font-bold leading-tight font-relaway">
-                Zanardo Marcenaria
-              </h1>
-              <section className="mt-2 md:mt-6 text-sm md:text-lg text-white font-relaway">
-                <p className="w-full mb-4 md:mb-6">
-                  A <strong>Zanardo Marcenaria</strong> é referência em <strong>marcenaria de alto padrão no Rio de Janeiro</strong>, especializada em <strong>móveis planejados</strong> e <strong>projetos sob medida</strong> que unem <strong>sofisticação, funcionalidade e acabamento premium</strong>.
-                </p>
-
-                <p className="w-full mb-4 md:mb-6">
-                  Atuamos lado a lado com <strong>arquitetos e designers de interiores</strong>, idealizando e executando <strong>projetos exclusivos</strong> que valorizam cada detalhe. Foi assim que participamos do <strong>premiado Raízes do Norte</strong>, vencedor do <strong>28º Prêmio Deca na categoria Cozinha para Receber (CASACOR)</strong>, onde tivemos a honra de executar <strong>toda a marcenaria do espaço</strong>.
-                </p>
-
-                <p className="w-full mb-4 md:mb-6">
-                  Realizamos <strong>projetos residenciais e comerciais</strong>, incluindo <strong>cozinhas, closets, painéis, mobiliário de sala</strong> e <strong>ambientes personalizados</strong>, sempre com <strong>design exclusivo</strong> e <strong>materiais de primeira qualidade</strong>.
-                </p>
-
-                <p className="w-full mb-4 md:mb-6">
-                  Nosso compromisso é <strong>transformar espaços com elegância, precisão artesanal e credibilidade</strong>, oferecendo <strong>soluções sob medida</strong> para clientes e profissionais que buscam uma <strong>marcenaria de alto padrão no Rio de Janeiro</strong>.
-                </p>
-              </section>
-            </div>
-          </div>
-        </section>
-
-        <section id="sobre" className="w-full px-6 py-6 md:py-20 md:px-20 animate-fadeIn">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl text-black font-relaway mb-2">Sobre Nós</h2>
-            <p className="text-gray-500 mb-8">
-              A <strong>Zanardo Marcenaria</strong> atua no Rio de Janeiro com <strong>foco em móveis planejados
-                de alto padrão</strong>.<br /> Nossos projetos unem <strong>sofisticação, funcionalidade e acabamento premium.</strong>
-            </p>
-            <Link
-              href="/sobre"
-              className="inline-block px-6 py-3 bg-yellow-800 text-white rounded-lg shadow hover:bg-black transition"
-            >
-              Saiba mais
-            </Link>
-          </div>
-        </section>
-        {/* Resumo Sobre e1cc9d */}
-        <section id="sobre" className="w-full bg-white px-6 py-6 md:py-20 md:px-20 animate-fadeIn">
-          <div className="w-full mx-auto text-center">
-            <h3 className="text-3xl text-black font-relaway mb-2">Portfólio</h3>
-            <p className="text-gray-500 mb-12">
-              <strong>Transforme seu espaço com móveis sob medida de alto padrão no Rio de Janeiro.</strong>
-              <br />Explore nossos projetos exclusivos e descubra como a <strong>Zanardo Marcenaria</strong> une design, sofisticação e funcionalidade em cada detalhe.
-            </p>
-            <div className="mb-8">
-              <PortfolioHomePage />
-            </div>
-            <Link
-              href="/portfolio"
-              className="inline-block px-6 py-3 bg-yellow-800 text-white rounded-lg shadow hover:bg-black transition"
-            >
-              Ver mais projetos
-            </Link>
-          </div>
-        </section>
-
-        <section id="sobre" className="w-full bg-gray-50 px-6 py-6 md:py-20 md:px-20 pt-6 animate-fadeIn">
-          <div className="w-full mx-auto text-center">
-            <h3 className="text-3xl text-black font-relaway mb-2">Contato</h3>
-            <Contato />
-          </div>
-        </section>
-      </main>
-    </>
-  );
-}
+import Image from "next/image";
+import PortfolioHomePage from "@/components/photos-home";
+import Contato from "@/components/contato";
+export default function Home(){return <main><section className="hero"><div className="hero-image"/><div className="container hero-content"><p className="eyebrow light">Marcenaria sob medida · Rio de Janeiro</p><h1>Espaços feitos para <em>viver histórias.</em></h1><p>Transformamos projetos em ambientes únicos, com precisão artesanal, funcionalidade e atenção a cada detalhe.</p><div className="actions"><Link className="button button-light" href="/portfolio">Conheça nossos projetos <span>↗</span></Link><a className="text-link light" href="https://wa.me/5521970002758" target="_blank" rel="noopener noreferrer">Solicitar orçamento ↗</a></div></div><span className="hero-index">01 / Feito para durar</span></section>
+<section className="section intro"><div className="container intro-grid"><p className="eyebrow">A arte de transformar</p><div><h2>O cuidado está em <em>cada detalhe.</em></h2><p>Unimos técnica, experiência e parceria com arquitetos e designers para criar marcenaria sob medida que faz sentido para cada espaço e para quem vive nele.</p><Link className="text-link" href="/sobre">Conheça nossa história <span>↗</span></Link></div></div></section>
+<section className="section projects"><div className="container"><div className="section-heading"><div><p className="eyebrow">Uma seleção do nosso trabalho</p><h2>Projetos que <em>ganham vida.</em></h2></div><Link className="text-link" href="/portfolio">Ver todos os projetos ↗</Link></div><PortfolioHomePage/><div className="projects-bottom"><span>Ambientes pensados para acolher, inspirar e durar.</span><Link className="button button-outline" href="/portfolio">Explorar portfólio ↗</Link></div></div></section>
+<section className="story-band"><div className="story-image"><Image src="/portfolio-home/13.1920x2880.jpg" alt="Detalhe de ambiente com marcenaria sob medida" fill sizes="(max-width: 768px) 100vw, 50vw" /></div><div className="story-copy"><p className="eyebrow">Nossa trajetória</p><h2>Um sonho que começou pequeno e <em>segue crescendo.</em></h2><p>Do primeiro aprendizado à construção de uma equipe, nossa história é feita de trabalho, coragem e vontade de evoluir.</p><Link className="text-link" href="/sobre">Descubra nossa história ↗</Link></div></section>
+<section className="section recognition"><div className="container recognition-grid"><p className="eyebrow">Parcerias que inspiram</p><div><h2>Grandes ideias merecem uma <em>execução à altura.</em></h2><p>Ao lado de arquitetos e designers, participamos do projeto Raízes do Norte, vencedor do 28º Prêmio Deca na categoria Cozinha para Receber (CASACOR), executando toda a marcenaria do espaço.</p></div></div></section>
+<section className="section contact-band"><div className="container"><p className="eyebrow">Vamos conversar?</p><h2>Seu próximo projeto começa <em>com uma conversa.</em></h2><p>Conte para nós o que você imagina para o seu espaço.</p><Contato/></div></section></main>}
